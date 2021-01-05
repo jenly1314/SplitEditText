@@ -33,7 +33,7 @@ SplitEditText for Android 是一个灵活的分割编辑框。常常应用于 **
 | setInputBorderColor | color |<font color=#1E90FF>#FF1E90FF</font>| 已输入文本的边框颜色 |
 | setFocusBorderColor | color | | 焦点框的边框颜色 |
 | setBoxBackgroundColor | color | | 框的背景颜色 |
-| setBorderCornerRadius | dimension | 0dp | 框的圆角大小（当 **BorderSpacing** 为 **0dp** 时，只有最左右两端的框有圆角） |
+| setBorderCornerRadius | dimension | 0dp | 框的圆角大小（当 **BorderSpacing** 为 **0dp** 时，只有最左和最右两端的框有圆角） |
 | setBorderSpacing | dimension | 8dp | 框与框之间的间距大小 |
 | setMaxLength | integer | 6 | 允许输入的最大长度（框个数量） |
 | setBorderStyle | enum | box | 边框风格 |
