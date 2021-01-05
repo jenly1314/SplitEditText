@@ -1,0 +1,3 @@
+include ':split-edit-text'
+include ':app'
+rootProject.name = "SplitEditText"

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity">
+
+    <com.king.view.splitedittext.SplitEditText
+        android:id="@+id/splitEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="number"/>
+
+    <com.king.view.splitedittext.SplitEditText
+        android:id="@+id/splitEditText2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        app:setFakeBoldText="true"
+        app:setBorderStyle="box"
+        app:setTextStyle="cipher_text"
+        app:setBoxBackgroundColor="@color/boxBackground"
+        app:setBorderCornerRadius="10dp"/>
+
+    <com.king.view.splitedittext.SplitEditText
+        android:id="@+id/splitEditText3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        app:setFakeBoldText="true"
+        app:setBorderStyle="box"
+        app:setBorderCornerRadius="10dp"
+        app:setBorderSpacing="0dp"
+        app:setFocusBorderColor="@color/colorAccent"
+        app:setInputBorderColor="@color/transparent"/>
+
+    <com.king.view.splitedittext.SplitEditText
+        android:id="@+id/splitEditText4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:text="121"
+        android:textColor="@color/textColor"
+        app:setBorderStyle="box"
+        app:setMaxLength="6"
+        app:setTextStyle="cipher_text"
+        app:setCipherMask="#"
+        app:setBorderCornerRadius="10dp"
+        app:setBorderSpacing="0dp"
+        app:setFocusBorderColor="@color/colorAccent" />
+    
+    <com.king.view.splitedittext.SplitEditText
+        android:id="@+id/splitEditText5"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="90dp"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        app:setMaxLength="4"
+        app:setBorderStyle="line"/>
+
+</LinearLayout>
