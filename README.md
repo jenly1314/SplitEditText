@@ -13,6 +13,7 @@
 SplitEditText for Android 是一个灵活的分割编辑框。常常应用于 **验证码输入** 、**密码输入** 、等场景。
 
 > 之所以造这个轮子，是因为之前有这样的需求，然后也用过其他开发者类似的库，但是需求随着需求的变动，之前使用的库就不太满足现有的需求。所以最近抽空鲁了一个轮子。
+
 > 这里贴出之前使用过的轮子[VerificationCodeView](https://github.com/JackTuoTuo/VerificationCodeView)，他是通过继承 **RelativeLayout** 实现的，而 **SplitEditText** 通过继承 **AppCompatEditText** 实现，在使用和实现来说：更灵活，更优雅。
 
 ## 特性说明
