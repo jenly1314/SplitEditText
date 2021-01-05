@@ -125,6 +125,10 @@ Java
 
 更多使用详情，请查看[app](app)中的源码使用示例
 
+## 相关推荐
+
+[KingKeyboard](https://github.com/jenly1314/KingKeyboard) 自定义键盘，满足各种不同场景的键盘输入需求
+
 ## 版本记录
 
 #### v1.0.0：2021-1-5
