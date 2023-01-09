@@ -2,6 +2,7 @@
 
 [![Download](https://img.shields.io/badge/download-App-blue.svg)](https://raw.githubusercontent.com/jenly1314/SplitEditText/master/app/release/app-release.apk)
 [![JCenter](https://img.shields.io/badge/JCenter-1.0.0-46C018.svg)](https://bintray.com/beta/#/jenly/maven/splitedittext)
+[![MavenCentral](https://img.shields.io/maven-central/v/com.github.jenly1314/splitedittext)](https://repo1.maven.org/maven2/com/github/jenly1314/splitedittext)
 [![JitPack](https://jitpack.io/v/jenly1314/SplitEditText.svg)](https://jitpack.io/#jenly1314/SplitEditText)
 [![CI](https://travis-ci.org/jenly1314/SplitEditText.svg?branch=master)](https://travis-ci.org/jenly1314/SplitEditText)
 [![CircleCI](https://circleci.com/gh/jenly1314/SplitEditText.svg?style=svg)](https://circleci.com/gh/jenly1314/SplitEditText)
@@ -11,8 +12,6 @@
 [![QQGroup](https://img.shields.io/badge/QQGroup-20867961-blue.svg)](http://shang.qq.com/wpa/qunwpa?idkey=8fcc6a2f88552ea44b1411582c94fd124f7bb3ec227e2a400dbbfaad3dc2f5ad)
 
 SplitEditText for Android 是一个灵活的分割编辑框。常常应用于 **验证码输入** 、**密码输入** 、等场景。
-
-> 之所以造这个轮子，是因为之前有这样的需求，然后也用过其它类似开源的库（[VerificationCodeView](https://github.com/JackTuoTuo/VerificationCodeView)），但是需求随着需求的变动，之前使用的库就不太满足现有的需求。所以最近抽空写了一个。
 
 ## 特性说明
 - [x] 支持设置框数量
@@ -42,35 +41,22 @@ SplitEditText for Android 是一个灵活的分割编辑框。常常应用于 **
 
 ## 引入
 
-### Maven：
-```maven
-<dependency>
-  <groupId>com.king.view</groupId>
-  <artifactId>splitedittext</artifactId>
-  <version>1.0.0</version>
-  <type>pom</type>
-</dependency>
-```
-### Gradle:
-```gradle
-//AndroidX
-implementation 'com.king.view:splitedittext:1.0.0'
-```
+1. 在Project的 **build.gradle** 里面添加远程仓库
 
-### Lvy:
-```lvy
-<dependency org='com.king.view' name='splitedittext' rev='1.0.0'>
-  <artifact name='$AID' ext='pom'></artifact>
-</dependency>
-```
-
-###### 如果Gradle出现compile失败的情况，可以在Project的build.gradle里面添加如下：（也可以使用上面的GitPack来complie）
 ```gradle
 allprojects {
     repositories {
-        maven { url 'https://dl.bintray.com/jenly/maven' }
+        //...
+        mavenCentral()
     }
 }
+```
+
+2. 在Module的 **build.gradle** 里面添加引入依赖项
+```gradle
+// AndroidX 版本
+implementation 'com.github.jenly1314:splitedittext:1.1.0'
+
 ```
 
 ## 示例
@@ -125,9 +111,14 @@ Java
 
 ## 相关推荐
 
+[CodeTextField](https://github.com/jenly1314/CodeTextField) 一个使用 Compose 实现的验证码输入框
+
 [KingKeyboard](https://github.com/jenly1314/KingKeyboard) 自定义键盘，满足各种不同场景的键盘输入需求
 
 ## 版本记录
+
+#### v1.1.0：2023-1-9 (开始发布至MavenCentral)
+*  迁移发布至MavenCentral
 
 #### v1.0.0：2021-1-5
 *  SplitEditText初始版本
@@ -135,28 +126,26 @@ Java
 ## 赞赏
 如果您喜欢SplitEditText，或感觉SplitEditText帮助到了您，可以点右上角“Star”支持一下，您的支持就是我的动力，谢谢 :smiley:<p>
 您也可以扫描下面的二维码，请作者喝杯咖啡 :coffee:
-    <div>
-        <img src="https://jenly1314.github.io/image/pay/wxpay.png" width="280" heght="350">
-        <img src="https://jenly1314.github.io/image/pay/alipay.png" width="280" heght="350">
-        <img src="https://jenly1314.github.io/image/pay/qqpay.png" width="280" heght="350">
-        <img src="https://jenly1314.github.io/image/alipay_red_envelopes.jpg" width="233" heght="350">
-    </div>
+<div>
+<img src="https://jenly1314.github.io/image/pay/sponsor.png" width="98%">
+</div>
 
 ## 关于我
-   Name: <a title="关于作者" href="https://about.me/jenly1314" target="_blank">Jenly</a>
+Name: <a title="关于作者" href="https://jenly1314.github.io" target="_blank">Jenly</a>
 
-   Email: <a title="欢迎邮件与我交流" href="mailto:jenly1314@gmail.com" target="_blank">jenly1314#gmail.com</a> / <a title="给我发邮件" href="mailto:jenly1314@vip.qq.com" target="_blank">jenly1314#vip.qq.com</a>
+Email: <a title="欢迎邮件与我交流" href="mailto:jenly1314@gmail.com" target="_blank">jenly1314#gmail.com</a> / <a title="给我发邮件" href="mailto:jenly1314@vip.qq.com" target="_blank">jenly1314#vip.qq.com</a>
 
-   CSDN: <a title="CSDN博客" href="http://blog.csdn.net/jenly121" target="_blank">jenly121</a>
+CSDN: <a title="CSDN博客" href="http://blog.csdn.net/jenly121" target="_blank">jenly121</a>
 
-   CNBlogs: <a title="博客园" href="https://www.cnblogs.com/jenly" target="_blank">jenly</a>
+CNBlogs: <a title="博客园" href="https://www.cnblogs.com/jenly" target="_blank">jenly</a>
 
-   GitHub: <a title="GitHub开源项目" href="https://github.com/jenly1314" target="_blank">jenly1314</a>
+GitHub: <a title="GitHub开源项目" href="https://github.com/jenly1314" target="_blank">jenly1314</a>
 
-   Gitee: <a title="Gitee开源项目" href="https://gitee.com/jenly1314" target="_blank">jenly1314</a>
+Gitee: <a title="Gitee开源项目" href="https://gitee.com/jenly1314" target="_blank">jenly1314</a>
 
-   加入QQ群: <a title="点击加入QQ群" href="http://shang.qq.com/wpa/qunwpa?idkey=8fcc6a2f88552ea44b1411582c94fd124f7bb3ec227e2a400dbbfaad3dc2f5ad" target="_blank">20867961</a>
+加入QQ群: <a title="点击加入QQ群" href="http://shang.qq.com/wpa/qunwpa?idkey=8fcc6a2f88552ea44b1411582c94fd124f7bb3ec227e2a400dbbfaad3dc2f5ad" target="_blank">20867961</a>
    <div>
        <img src="https://jenly1314.github.io/image/jenly666.png">
        <img src="https://jenly1314.github.io/image/qqgourp.png">
    </div>
+

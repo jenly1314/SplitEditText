@@ -42,7 +42,7 @@ dependencies {
     testImplementation "junit:junit:$versions.junit"
     androidTestImplementation "androidx.test.ext:junit:$versions.androidExtJunit"
     androidTestImplementation "androidx.test.espresso:espresso-core:$versions.espressoCore"
+    implementation project(':splitedittext')
 
-    implementation project(':split-edit-text')
 
 }

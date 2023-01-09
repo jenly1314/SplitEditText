@@ -4,23 +4,30 @@ buildscript {
     apply from: 'versions.gradle'
     repositories {
         google()
-        jcenter()
+        mavenCentral()
 
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$versions.gradle"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:$versions.dokka"
-
-        classpath "com.github.panpf.bintray-publish:bintray-publish:$versions.bintrayRelease"
+//        classpath "com.github.panpf.bintray-publish:bintray-publish:$versions.bintrayRelease"
+        classpath "com.vanniktech:gradle-maven-publish-plugin:$versions.mavenPublish"
     }
 }
 
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+    }
+}
 
+allprojects {
+    plugins.withId("com.vanniktech.maven.publish") {
+        mavenPublish {
+            sonatypeHost = "S01"
+        }
     }
 }
 
