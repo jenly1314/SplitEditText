@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/github/license/jenly1314/SplitEditText?logo=open-source-initiative)](https://opensource.org/licenses/mit)
 
 
-SplitEditText for Android 是一个灵活的分割编辑框。常常应用于 **验证码输入** 、**密码输入** 、等场景。
+SplitEditText for Android 是一个灵活的分割编辑框。常常应用于验证码输入、密码输入、等场景。
 
 ## 特性说明
 - ✅ 支持设置框数量
@@ -114,7 +114,7 @@ Java
 - [KingKeyboard](https://github.com/jenly1314/KingKeyboard) 自定义键盘，满足各种不同场景的键盘输入需求。
 - [compose-component](https://github.com/jenly1314/compose-component) 一个Jetpack Compose的组件库；主要提供了一些小组件，便于快速使用。
 
-## 版本记录
+## 版本日志
 
 #### v1.1.0：2023-1-9 (开始发布至MavenCentral)
 *  迁移发布至MavenCentral
